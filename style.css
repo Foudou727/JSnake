@@ -1,0 +1,104 @@
+/* --------------------------- General Properties --------------------------- */
+
+.hidden {
+    display : none ;
+}
+
+body {
+    position : relative ;
+    width : 100vw ;
+    height : 100vh ;
+    background-color: black ;
+    overflow : hidden ;
+    margin : 0 ;
+}
+
+body.start {
+    background-color: #EEEFFF ;
+}
+
+/* --------------------------- HomeScreen --------------------------- */
+
+#title {
+    position : absolute ;
+    top : 40% ;
+    left : 50% ;
+    transform: translate(-50%, -100%) ;
+    
+    font-size: 10vh ;
+    color : white ;
+}
+
+#startButton {
+    position : absolute ;
+    
+    width : 20vw ;
+    height : 10vh ;
+    
+    top : 60% ;
+    left : 50% ;
+    transform : translate(-50%, -100%) ;
+    
+    background-color: white;
+    border-radius: 1vw ;
+}
+
+#startButton:hover {
+    background-color: #DDDDDD;
+}
+
+#startButtonInside {
+    position: relative ;
+    width : 95% ;
+    height : 90% ;
+
+    border-radius: 1vw ;
+    transform: translate(2.5%, 5%);
+    background-color: black ;
+}
+
+#startButton:hover div {
+    background-color: #111111;
+}
+
+#startButtonInside h2 {
+    position : absolute ;
+    
+    top : 60% ; 
+    left : 50% ;
+    transform : translate(-50%, -140%) ;    
+    
+    font-size: 2vw;
+    color : white ;
+}
+
+#startButton:hover h2 {
+    color : red ;
+}
+
+/* --------------------------- SnakeScreen --------------------------- */
+
+body.start h2 {
+    position : absolute ;
+    
+    top : 10% ;
+    left : 50% ;
+    transform : translate(-50%, -100%) ;
+
+    color : white ;
+    font-size: 5vh;
+    -webkit-text-stroke: 1px gray;
+}
+
+#snakeCanva {
+    position : absolute ;
+    
+    top : 55% ;
+    left : 50% ;
+    transform : translate(-50%, -50%) ;
+
+    width : 80vh ;
+    height : 80vh ;
+    background-color: white ;
+    border : 2px solid black ;
+}
